@@ -26,11 +26,11 @@ phases:
       - echo Creating final deployment files...
       - mkdir -p k8s-out
       - sed "s|IMAGE_PLACEHOLDER|${ACCOUNT_ID}.dkr.ecr.${REGION}.amazonaws.com/${REPO_NAME}:${IMAGE_TAG}|g" k8s/deployment.yaml > k8s-out/deployment.yaml
-      - cp k8s/service.yaml k8s-out/service.yaml
+      - cp k8s/svc.yaml k8s-out/svc.yaml
       - ls -R
 
 artifacts:
   base-directory: k8s-out
   files:
     - deployment.yaml
-    - service.yaml
+    - svc.yaml
