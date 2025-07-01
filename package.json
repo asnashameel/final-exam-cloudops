@@ -1,0 +1,15 @@
+{
+  "name": "vote-app",
+  "version": "1.0.0",
+  "description": "Vote for Your Favorite Programming Language",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Dummy test passed!\" && exit 0"
+  },
+  "author": "Mahmoud-Shaaban",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
