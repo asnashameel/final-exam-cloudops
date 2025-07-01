@@ -18,7 +18,7 @@ spec:
         app: node-deployment
     spec:
       containers:
-      - image: current-alpine
+      - image: IMAGE_PLACEHOLDER
         name: current-alpine
         resources: {}
 status: {}
